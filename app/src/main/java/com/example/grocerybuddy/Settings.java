@@ -2,7 +2,9 @@ package com.example.grocerybuddy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -22,5 +24,14 @@ public class Settings extends AppCompatActivity {
         name = findViewById(R.id.name_textView);
         email = findViewById(R.id.email_textView);
         notifications = findViewById(R.id.notifications_textView);
+
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                setResult(RESULT_OK, intent);
+                finish();
+            }
+        });
     }
 }

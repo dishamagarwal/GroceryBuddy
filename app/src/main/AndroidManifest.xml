@@ -13,7 +13,7 @@
         android:theme="@style/Theme.GroceryBuddy"
         tools:targetApi="31">
         <activity
-            android:name=".Setting"
+            android:name=".Settings"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
