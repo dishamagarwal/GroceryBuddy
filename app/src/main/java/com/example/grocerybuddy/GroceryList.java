@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+// declare layouts here
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link GroceryList#newInstance} factory method to
@@ -58,7 +59,9 @@ public class GroceryList extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_grocery_list, container, false);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_grocery_list, container, false);
+        //initialize layouts here
+        return rootView;
     }
 }

@@ -10,7 +10,7 @@
     <string name="expired">expired</string>
     <string name="expires_in">expires in</string>
     <string name="bought">bought on</string>
-    <string name="enter_name">enter the name</string>
+    <string name="enter_name">+ enter the name</string>
     <string name="name_disc">add a new item to your inventory</string>
     <string name="expiry_date">expiry date?</string>
     <string name="date_disc">09/13/2022</string>

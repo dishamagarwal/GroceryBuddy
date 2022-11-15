@@ -1,7 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
+    android:id="@+id/frag_add_item"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddItem" />
+    tools:context=".AddItem" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/category1_imageButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enter_name3"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="33dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="33dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enter_name3"
+            tools:src="@tools:sample/avatars" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="33dp"
+            android:ems="10"
+            android:hint="@string/date_disc"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#838383"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enter_name2" />
+
+        <TextView
+            android:id="@+id/enter_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/lora"
+            android:text="@string/expiry_date"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+        <TextView
+            android:id="@+id/enter_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/lora"
+            android:text="@string/category"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+        <TextView
+            android:id="@+id/enter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="33dp"
+            android:fontFamily="@font/lora"
+            android:text="@string/enter_name"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="33dp"
+            android:ems="10"
+            android:hint="@string/name_disc"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#FF838383"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enter_name" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/category1_imageButton"
+            tools:src="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/addItem_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/button"
+            android:backgroundTint="#E63946"
+            android:fontFamily="@font/lora"
+            android:text="@string/add_item"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
