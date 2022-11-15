@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/itemType_imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/scan_bill2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="33dp"
+        android:fontFamily="@font/lora"
+        android:text="temp"
+        android:textColor="#000000"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/itemType_imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/expires_in"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="33dp"
+        android:fontFamily="@font/lora"
+        android:text="@string/expires_in"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/itemType_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/scan_bill2" />
+
+    <TextView
+        android:id="@+id/bought_on"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="33dp"
+        android:fontFamily="@font/lora"
+        android:text="@string/bought"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/itemType_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/expires_in" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
