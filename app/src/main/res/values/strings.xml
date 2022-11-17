@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">GroceryBuddy</string>
+    <string name="login">Log In</string>
+    <string name="register">Register</string>
     <string name="your_groceries">Your Groceries</string>
     <string name="settings">Settings</string>
+    <string name="password">Password</string>
     <string name="name">Name</string>
     <string name="email">Email</string>
     <string name="notification">Notifications</string>
@@ -9,6 +12,8 @@
     <string name="add_item">Add Item</string>
     <string name="expired">expired</string>
     <string name="expires_in">expires in</string>
+    <string name="error_message">Error Message</string>
+    <string name="error_message_stars">**Error message</string>
     <string name="bought">bought on</string>
     <string name="enter_name">+ enter the name</string>
     <string name="name_disc">add a new item to your inventory</string>
