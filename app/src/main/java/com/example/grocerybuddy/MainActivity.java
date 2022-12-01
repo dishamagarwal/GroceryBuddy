@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
         scanView = findViewById(R.id.scanView_imageButton);
         settings = findViewById(R.id.settings);
 
-        getSupportFragmentManager().beginTransaction().add(R.id.containerFragment,
-                new GroceryList(), "groceryList").addToBackStack(null).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.containerFrag2,
+                new Home(), "home").addToBackStack(null).commit();
 
         listView.setOnClickListener(new View.OnClickListener() {
             @Override
