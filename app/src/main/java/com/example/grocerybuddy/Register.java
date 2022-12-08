@@ -40,7 +40,6 @@ public class Register extends Fragment implements View.OnClickListener {
     private TextView text_view_error_msg;
     private EditText text_name, text_email, text_password;
     private Button btn_register;
-    private final OkHttpClient client = new OkHttpClient();
     private static String INVALID_NAME = "**Name cannot be empty**";
     private static String INVALID_EMAIL = "**Email is invalid**";
     private static String INVALID_PASSWORD = "**Password cannot be empty or less than length of 6**";
